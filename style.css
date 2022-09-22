@@ -1,0 +1,87 @@
+@charset "UTF-08";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+:root{
+    --font1:Verdana, Geneva, Tahoma, sans-serif;
+    --font2:'Sriracha','cursive', sans-serif;
+    --font3:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font4:'Ms Madi','cursive',sans-serif;
+    --font5:'Dancing Script', 'Cursive',sans-serif;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+html,body {
+    font-family: var(--font1);
+    min-height:100vh;
+    background-color: darkgray;
+}
+
+header{
+    font-family: var(--font2);
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant:small-caps;
+}
+header > p {
+    padding-bottom:50px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+    color: red;
+}
+section{
+    font-family: var(--font5);
+    font-size:3.5vw;
+    line-height:2em;
+    padding-top:10vh;
+    padding-bottom:10vh;
+    padding-left: 30px;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: grey;
+    color:white;
+    box-shadow:inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
+}
+section.imagem > p{
+    display:inline-block;
+    padding:5px;
+    text-shadow: 2px 2px 0px black;
+}
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding:10px;
+}
